@@ -18,8 +18,13 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    
 }
+
+/* .bg-primary, .text-primary{
+    @apply bg-linear-to-r from-[#0076C1] to-[#15CDB8];
+} */
 
 .navbar-fixed {
     @apply fixed z-[9999] bg-white/80;
