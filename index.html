@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
     <title>Portofolio-Dipta</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="./src/output.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!-- navbar -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container md:container-2xl">
+        <div class="container">
             <div class="flex items-center justify-between relative md:px-25">
                 <div class="px-4">
                     <a href="#home" class="font-bold text-lg text-primary block py-6 md:text-2xl">DiptaWeb</a>
@@ -51,42 +51,28 @@
     <!-- navbar end -->
 
     <!-- hero section -->
-    <section id="home" class="pt-36 md:pt-20">
-        <div class="container">
-            <div class="flex flex-wrap md:flex md:items-center md:justify-around md:pl-25">
-                <div class="w-full self-center px-4 lg:w-1/2 " data-aos="zoom-out-right">
+    <section id="home" class="h-screen overflow-hidden">
+        <img src="./dist/img/bg-portopolio.jpg" alt="background wakkk" class="w-full absolute object-fill h-screen">
+        <div class="container pt-36 md:pt-20 relative">
+            <div class="flex flex-wrap items-center md:px-25">
+                <div class="w-full  px-4 md:w-1/2" data-aos="zoom-out-right">
                     <h1 class="text-base font-semibold text-primary mb-2 md:text-xl lg:text-2xl">Haloo cinggg, saya
-                        <span class="block font-bold text-dark text-4xl lg:text-5xl">Pradipta Adrianta</span>
+                        <span class="block font-bold text-white text-4xl lg:text-5xl">Pradipta Adrianta</span>
                     </h1>
-                    <h2 class="font-medium  text-secondary text-base mb-5 lg:text-2xl">Mahasiswa & <span
+                    <h2 class="font-medium  text-secondary text-base mb-5 lg:text-2xl">Mahasiswa & <span id="changeText"
                             class="text-dark">FrontEnd Developer</span></h2>
                     <p class="text-sm font-medium text-secondary mb-10 leading-relaxed">Belajar ngoding sama kek
                         mencitaimu, <span class="text-dark">Rumit!</span></p>
 
                     <a href="https://wa+me/"
-                        class="text-base font-semibold text-white bg-primary py-3 px-4 rounded-full hover:shadow-lg hover:opacity-40 transition duration-300 ease-in-out">Hubungi
+                        class="text-base font-semibold text-white bg-primary py-3 px-4 rounded-full hover:shadow-lg hover:bg-sky-500     transition duration-300 ease-in-out">Hubungi
                         Saya</a>
                 </div>
 
                 <div class="w-full self-end px-4 lg:w-1/2" data-aos="zoom-in-up">
                     <div class=" flex justify-center items-center relative mt-10 lg:mt-0 lg:right-0 ">
-                        <img src="dist/img/foto.png" alt="pradipta adrianta" class="max-w-full mx-auto">
-                        <span class="absolute bottom-10 translate-y-1/2 -z-10 md:scale-130">
-                            <svg id="sw-js-blob-svg" width="400" height="400" viewBox="0 0 100 100"
-                                xmlns="http://www.w3.org/2000/svg" class="animate-bounce">
-                                <defs>
-                                    <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-                                        <stop id="stop1" stop-color="rgba(0, 118, 193, 1)" offset="0%"></stop>
-                                        <stop id="stop2" stop-color="#159DCD" offset="100%">
-                                        </stop>
-                                    </linearGradient>
-                                </defs>
-                                <path fill="url(#sw-gradient)"
-                                    d="M22.9,-28.3C29,-22.2,32.7,-14.3,34.1,-6.1C35.5,2.2,34.6,10.8,30.2,16.4C25.8,22,17.8,24.6,10.2,26.9C2.6,29.2,-4.8,31.2,-12.3,30.1C-19.7,28.9,-27.3,24.5,-29.7,18.2C-32,11.9,-29,3.7,-26,-3.1C-23.1,-9.9,-20.2,-15.3,-15.9,-21.7C-11.5,-28.1,-5.8,-35.6,1.3,-37.2C8.4,-38.8,16.9,-34.5,22.9,-28.3Z"
-                                     transform="translate(50 50)" stroke-width="0"
-                                    style="transition: 0.3s;" stroke="url(#sw-gradient)" transform="scale(150)"></path>
-                            </svg>
-                        </span>
+                        <img src="dist/img/dipta-art.png" alt="pradipta adrianta" class="max-w-full mx-auto">
+
                     </div>
                 </div>
             </div>
@@ -97,121 +83,130 @@
     <!-- about -->
     <section id="about" class="pt-36 pb-32">
         <div class="container">
-            <div class="flex flex-wrap md:flex md:items-center md:justify-around md:pl-25">
-                <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-up">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">pria menawan penuh cerita, halo
-                        aku Dipta.</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya seorang mahasiswa aktif
-                        Institut bisnis dan teknologi denpasar [INSTIKI],jurusan Informatika Manajemen data dan
-                        informasi</p>
+            <div class="flex flex-wrap md:px-25">
+                <div data-aos="fade" data-aos-duration="2000"
+                    class="card mx-auto w-[300px] overflow-hidden rounded-t-full rounded-b-none shadow-lg ring-4 ring-gray-700/40 mb-10">
+                    <img src="./dist/img/IMG_6379.JPG" alt=""
+                        class="w-full h-[380px] object-cover object-center hover:scale-110 transition-all ease-in-out duration-500">
                 </div>
-                <div data-aos="fade-up" class="w-full px-4 lg:w-1/2">
-                    <h2 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h2>
+                <div class=" lg:w-1/2">
+                    <div class="w-full px-4 mb-5" data-aos="fade-up">
+                        <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">pria menawan penuh cerita,
+                            halo
+                            aku Dipta.</h2>
+                        <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Saya seorang mahasiswa aktif
+                            Institut bisnis dan teknologi denpasar [INSTIKI],jurusan Informatika Manajemen data dan
+                            informasi</p>
+                    </div>
+                    <div data-aos="fade-up" class="w-full px-4 mb-10">
+                        <h2 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h2>
 
-                    <p class="font-medium text-base text-secondary max-w-xl mb-3 lg:text-lg">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Fuga itaque harum perspiciatis magni necessitatibus, obcaecati id
-                        repellendus architecto explicabo recusandae!</p>
+                        <p class="font-medium text-base text-secondary max-w-xl mb-3 lg:text-lg">Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Fuga itaque harum perspiciatis magni!</p>
 
-                    <div class="flex items-center">
-                        <a href="https://instagram.com/pradiptaaee/" target="_blank"
-                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" class="fill-current"
-                                viewBox="0 0 48 48">
-                                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
-                                    r="44.899" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#fd5"></stop>
-                                    <stop offset=".328" stop-color="#ff543f"></stop>
-                                    <stop offset=".348" stop-color="#fc5245"></stop>
-                                    <stop offset=".504" stop-color="#e64771"></stop>
-                                    <stop offset=".643" stop-color="#d53e91"></stop>
-                                    <stop offset=".761" stop-color="#cc39a4"></stop>
-                                    <stop offset=".841" stop-color="#c837ab"></stop>
-                                </radialGradient>
-                                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
-                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-                                </path>
-                                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54"
-                                    r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#4168c9"></stop>
-                                    <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
-                                </radialGradient>
-                                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
-                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-                                </path>
-                                <path fill="#fff"
-                                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
-                                </path>
-                                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
-                                <path fill="#fff"
-                                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://tiktok.com/pradiptaaee/" target="_blank"
-                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="100"
-                                viewBox="0 0 48 48">
-                                <title>TIktok</title>
-                                <path fill="#212121" fill-rule="evenodd"
-                                    d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z"
-                                    clip-rule="evenodd"></path>
-                                <path fill="#ec407a" fill-rule="evenodd"
-                                    d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z"
-                                    clip-rule="evenodd"></path>
-                                <path fill="#fff" fill-rule="evenodd"
-                                    d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z"
-                                    clip-rule="evenodd"></path>
-                                <path fill="#81d4fa" fill-rule="evenodd"
-                                    d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="https:/linkedin.com/pradiptaaee/" target="_blank"
-                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="100" class="fill-current"
-                                width="20" viewBox="0 0 50 50">
-                                <path
-                                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/pradiptaaee/" target="_blank"
-                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>GitHub</title>
-                                <path
-                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                            </svg>
-                        </a>
-                        <a href="https://youtube.com/pradiptaaee/" target="_blank"
-                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center scale-100 border hover:border-primary hover:bg-primary hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="100"
-                                viewBox="0 0 48 48">
-                                <linearGradient id="PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1" x1="9.816" x2="41.246"
-                                    y1="9.871" y2="41.301" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#f44f5a"></stop>
-                                    <stop offset=".443" stop-color="#ee3d4a"></stop>
-                                    <stop offset="1" stop-color="#e52030"></stop>
-                                </linearGradient>
-                                <path fill="url(#PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1)"
-                                    d="M45.012,34.56c-0.439,2.24-2.304,3.947-4.608,4.267C36.783,39.36,30.748,40,23.945,40	c-6.693,0-12.728-0.64-16.459-1.173c-2.304-0.32-4.17-2.027-4.608-4.267C2.439,32.107,2,28.48,2,24s0.439-8.107,0.878-10.56	c0.439-2.24,2.304-3.947,4.608-4.267C11.107,8.64,17.142,8,23.945,8s12.728,0.64,16.459,1.173c2.304,0.32,4.17,2.027,4.608,4.267	C45.451,15.893,46,19.52,46,24C45.89,28.48,45.451,32.107,45.012,34.56z">
-                                </path>
-                                <path
-                                    d="M32.352,22.44l-11.436-7.624c-0.577-0.385-1.314-0.421-1.925-0.093C18.38,15.05,18,15.683,18,16.376	v15.248c0,0.693,0.38,1.327,0.991,1.654c0.278,0.149,0.581,0.222,0.884,0.222c0.364,0,0.726-0.106,1.04-0.315l11.436-7.624	c0.523-0.349,0.835-0.932,0.835-1.56C33.187,23.372,32.874,22.789,32.352,22.44z"
-                                    opacity=".05"></path>
-                                <path
-                                    d="M20.681,15.237l10.79,7.194c0.689,0.495,1.153,0.938,1.153,1.513c0,0.575-0.224,0.976-0.715,1.334	c-0.371,0.27-11.045,7.364-11.045,7.364c-0.901,0.604-2.364,0.476-2.364-1.499V16.744C18.5,14.739,20.084,14.839,20.681,15.237z"
-                                    opacity=".07"></path>
-                                <path fill="#fff"
-                                    d="M19,31.568V16.433c0-0.743,0.828-1.187,1.447-0.774l11.352,7.568c0.553,0.368,0.553,1.18,0,1.549	l-11.352,7.568C19.828,32.755,19,32.312,19,31.568z">
-                                </path>
-                            </svg>
-                        </a>
+                        <div class="flex items-center">
+                            <a href="https://instagram.com/pradiptaaee/" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" class="fill-current"
+                                    viewBox="0 0 48 48">
+                                    <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
+                                        r="44.899" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fd5"></stop>
+                                        <stop offset=".328" stop-color="#ff543f"></stop>
+                                        <stop offset=".348" stop-color="#fc5245"></stop>
+                                        <stop offset=".504" stop-color="#e64771"></stop>
+                                        <stop offset=".643" stop-color="#d53e91"></stop>
+                                        <stop offset=".761" stop-color="#cc39a4"></stop>
+                                        <stop offset=".841" stop-color="#c837ab"></stop>
+                                    </radialGradient>
+                                    <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                        d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                    </path>
+                                    <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54"
+                                        r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#4168c9"></stop>
+                                        <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                                    </radialGradient>
+                                    <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                        d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                                    </path>
+                                    <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                                    <path fill="#fff"
+                                        d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://tiktok.com/pradiptaaee/" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="100"
+                                    viewBox="0 0 48 48">
+                                    <title>TIktok</title>
+                                    <path fill="#212121" fill-rule="evenodd"
+                                        d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill="#ec407a" fill-rule="evenodd"
+                                        d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z"
+                                        clip-rule="evenodd"></path>
+                                    <path fill="#81d4fa" fill-rule="evenodd"
+                                        d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a href="https:/linkedin.com/pradiptaaee/" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="100"
+                                    class="fill-current" width="20" viewBox="0 0 50 50">
+                                    <path
+                                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/pradiptaaee/" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white">
+                                <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
+                            <a href="https://youtube.com/pradiptaaee/" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center scale-100 border hover:border-primary hover:bg-primary hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="100"
+                                    viewBox="0 0 48 48">
+                                    <linearGradient id="PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1" x1="9.816" x2="41.246"
+                                        y1="9.871" y2="41.301" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#f44f5a"></stop>
+                                        <stop offset=".443" stop-color="#ee3d4a"></stop>
+                                        <stop offset="1" stop-color="#e52030"></stop>
+                                    </linearGradient>
+                                    <path fill="url(#PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1)"
+                                        d="M45.012,34.56c-0.439,2.24-2.304,3.947-4.608,4.267C36.783,39.36,30.748,40,23.945,40	c-6.693,0-12.728-0.64-16.459-1.173c-2.304-0.32-4.17-2.027-4.608-4.267C2.439,32.107,2,28.48,2,24s0.439-8.107,0.878-10.56	c0.439-2.24,2.304-3.947,4.608-4.267C11.107,8.64,17.142,8,23.945,8s12.728,0.64,16.459,1.173c2.304,0.32,4.17,2.027,4.608,4.267	C45.451,15.893,46,19.52,46,24C45.89,28.48,45.451,32.107,45.012,34.56z">
+                                    </path>
+                                    <path
+                                        d="M32.352,22.44l-11.436-7.624c-0.577-0.385-1.314-0.421-1.925-0.093C18.38,15.05,18,15.683,18,16.376	v15.248c0,0.693,0.38,1.327,0.991,1.654c0.278,0.149,0.581,0.222,0.884,0.222c0.364,0,0.726-0.106,1.04-0.315l11.436-7.624	c0.523-0.349,0.835-0.932,0.835-1.56C33.187,23.372,32.874,22.789,32.352,22.44z"
+                                        opacity=".05"></path>
+                                    <path
+                                        d="M20.681,15.237l10.79,7.194c0.689,0.495,1.153,0.938,1.153,1.513c0,0.575-0.224,0.976-0.715,1.334	c-0.371,0.27-11.045,7.364-11.045,7.364c-0.901,0.604-2.364,0.476-2.364-1.499V16.744C18.5,14.739,20.084,14.839,20.681,15.237z"
+                                        opacity=".07"></path>
+                                    <path fill="#fff"
+                                        d="M19,31.568V16.433c0-0.743,0.828-1.187,1.447-0.774l11.352,7.568c0.553,0.368,0.553,1.18,0,1.549	l-11.352,7.568C19.828,32.755,19,32.312,19,31.568z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -219,7 +214,7 @@
 
     <!-- portofolio -->
     <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
-        <div class="container lg:px-25">
+        <div class="container">
             <div class="w-full px-4">
                 <div data-aos="zoom-out" class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-primary text-lg mb-2 md:text-2xl">Portofolio</h4>
@@ -234,7 +229,9 @@
                         <img src="dist/img/2.png" alt="landing page" class="w-full ">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website SIGITAR</h3>
-                    <p class="font-medium text-base text-secondary">website toko alat musik yang menjual gitar dengan menggunakan sistem CRUD sederhana. Menggunakan PHP sebagai bahasa programnya  Laravel sebagai frameworknya 
+                    <p class="font-medium text-base text-secondary">website toko alat musik yang menjual gitar dengan
+                        menggunakan sistem CRUD sederhana. Menggunakan PHP sebagai bahasa programnya Laravel sebagai
+                        frameworknya
                     </p>
                 </div>
                 <div data-aos="fade-up" class="mb-12 p-4 md:w-1/2">
@@ -257,7 +254,9 @@
                 </div>
                 <div data-aos="fade-up" class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md hover:brightness-50">
-                        <a href="https://pradiptaaee.github.io/undanganWedding-tailwindcss/" type="_blank"><img src="dist/img/3.png" alt="landing page" width="100" class="flex mx-auto py-2 justify-center items-center "> </a>
+                        <a href="https://pradiptaaee.github.io/undanganWedding-tailwindcss/" type="_blank"><img
+                                src="dist/img/3.png" alt="landing page" width="100"
+                                class="flex mx-auto py-2 justify-center items-center "> </a>
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Undangan Digital</h3>
                     <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -391,7 +390,7 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000, // durasi animasi

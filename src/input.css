@@ -3,7 +3,7 @@
 @theme {
     --color-primary: oklch(0.588 0.158 241.966);
     --color-dark: oklch(37.2% 0.044 257.287);
-    --color-secondary: oklch(55.4% 0.046 257.417);
+    --color-secondary: oklch(70.4% 0.04 256.788);
 
     /* 📦 container */
     --container-padding: 16px;
